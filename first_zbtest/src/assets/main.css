@@ -1,0 +1,63 @@
+/* Import base styles */
+@import './base.css';
+
+/* Global styles for full screen layout */
+:root {
+  --header-height: 60px;
+  --header-padding: 0 20px;
+  --header-bg-color: #fff;
+  --header-border-color: #e6e6e6;
+  --main-padding: 30px 20px 20px;
+  --user-info-padding: 8px 15px;
+  --border-radius: 4px;
+  --transition-speed: 0.2s;
+  --avatar-margin-right: 8px;
+  --sidebar-width: 200px;
+  --container-height: 100vh;
+  --mobile-breakpoint: 768px;
+  --sidebar-mobile-width: 64px;
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  padding: 0;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
