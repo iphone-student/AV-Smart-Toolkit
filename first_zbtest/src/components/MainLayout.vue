@@ -21,10 +21,14 @@
           <el-icon><Picture /></el-icon>
           <span>实时画面</span>
         </el-menu-item>
-          <el-menu-item index="/video">
-          <el-icon><Picture /></el-icon>
-          <span>视频接入</span>
-        </el-menu-item>
+          <el-sub-menu index="/video">
+            <template #title>
+              <el-icon><Picture /></el-icon>
+              <span>视频接入</span>
+            </template>
+            <el-menu-item index="/video/camera">摄像头</el-menu-item>
+            <el-menu-item index="/video/stream">视频流</el-menu-item>
+          </el-sub-menu>
           <el-menu-item index="/alarm">
           <el-icon><Picture /></el-icon>
           <span>告警记录</span>

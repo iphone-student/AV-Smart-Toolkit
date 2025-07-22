@@ -73,7 +73,7 @@
                 console.log(index, row);
             }
         },
-        activeName: 'second',
+        activeName: 'first',
         input: ''
       };
     },

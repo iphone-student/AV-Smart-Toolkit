@@ -7,6 +7,8 @@ import DashboardView from '../views/DashboardView.vue'
 import DetectionView from '../views/DetectionView.vue'
 import SettingsView from '../views/SettingsView.vue'
 import AlgorithmView from '../views/AlgorithmView.vue'
+import CameraView from '../views/CameraView.vue'
+import StreamView from '../views/StreamView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -54,7 +56,18 @@ const router = createRouter({
           path: '/settings',
           name: 'settings',
           component: SettingsView
+        },
+        {
+          path: '/video/camera',
+          name: 'camera', 
+          component: CameraView
+        },
+        {
+          path: '/video/stream', 
+          name: 'stream', 
+          component: StreamView
         }
+      
       ]
     }
   ],
